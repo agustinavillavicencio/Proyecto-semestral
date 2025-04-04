@@ -16,7 +16,7 @@ La información que circula hasta ahora, y de donde saqué la idea, se caracteri
 -	Los datos son accesibles asi que ya los tengo
 ### ¿Qué datos no existen y cómo los obtendrán?
 - Hasta ahora ninguno
-### ¿Qué datos son públicos y uales no?
+### ¿Qué datos son públicos y cuales no?
 - Todos son públicos
 ### ¿Qué datos son confiables y cuáles no?
 - Al ser de fuentes confiables y respaldadas, son todos datos confiables
