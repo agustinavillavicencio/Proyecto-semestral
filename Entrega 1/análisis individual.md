@@ -1,7 +1,10 @@
 # ¿Por qué es relevante para ti realizar este tema?
-
+La relevancia por mi partes, surge a partir del interés en saber si hoy en día los parámetros de belleza y presentación física, que se exigían directa e indirectamente en el pasado, siguen siendo relevantes para el desarrollo y exito de una artista pop femenina. Creo que el tema de la apariencia física y su valor a la hora de desarrollar una carrera, siendo mujer, es un conflicto que aún no está resuelto por el completo, y por lo mismo es relevante, ya que enfatiza y reabre la discusión frente a si es que las industrias siguen sobre explotando a las mujeres en ámbitos fuera de su talento. También, creo que es relevante porque es de interés propio poder darme cuenta si, al final, para ser exitosa una tiene que ser igual a las que ya alcanzaron el éxito, o si lo que te hace destacar es un factor único personal.
 # ¿Qué esperas contar y/o revelar con él? ¿Cuál es el impacto que esperas generar?
-
+Quiero contar y mostrar a través de mi trabajo quienes son las artistas más famosas y que tienen en común. A partir de eso, quiero mostrar el estancamiento o no de la industria musical frente a la persepción de la mujer; mostrar si es que para se rexitosa una debe verse y actuar de cierta forma o no. Respecto al impacto, me gusta pensar que quizás mi trabajo puede llevar a una refelxión respecto a la importancia de la autenticidad, al igual que quizás refelxionar y querer actuar en contra de la tradición patriarcal que exige a las mujeres a alcanzar cierto perfil para trascender en la música. 
 # Elabora al menos 3 ideas que te gustaría realizar para contar la historia
-
+1. El análisis comparativo entre las artistas más populares del siglo 21 según Billboard
+2. creación de un perfil como "ideal de la pop star"
+3. Comparar el común de las artistas más popualres del siglo 21 con las artistas que actualmente estan "hot" en streams y popularidad en las charts de Billboard. 
 # ¿Qué te gustaría aprender en este proyecto?
+Principalmente, quiero sacarme la duda respecto a si hay un perfil para el éxito, pero también quiero aprender a usar las herramientas necesarias para poder interpretar y manejar mejor los datos, y así poder contar historias y dar cuenta de problemas a través de fundamentos. Quiero aprender a manejar la forma en cómo puedo formar un respaldo para mis ideas o intereses respecto a un tema o suceso.  
