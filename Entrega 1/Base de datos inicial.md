@@ -1,3 +1,5 @@
+# Base de datos inicial: THE GREATEST POP STARS OF THE 21st CENTURY
+
 # Autor y publicación de los datos:
 ### ¿quién o quienes son los propietarios o autores?, dónde se publicó (indiquen el link de descarga o ubicación, o describan cómo la obtuvieron).
 Los datos provienen de Billboard, una de las publicaciones más importantes en la industria musical. La tabla "THE GREATEST POP STARS OF THE 21st CENTURY" fue publicada en su sitio web oficial, Billboard.com. (https://www.billboard.com/p/best-pop-stars-21st-century/) No se especifica un solo autor, ya que es un listado creado por el equipo editorial de Billboard a partir de streams globales de muchos usuarios.
