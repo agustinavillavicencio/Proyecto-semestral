@@ -27,3 +27,6 @@ Me parece que al mantener este orden claro, cronológico (en términos de mi pen
 # Actualización de la hipótesis y propuesta de trabajo grupal
 
 Dentro del género pop, las diferencias establecen patrones, pero a día de hoy, no se presentan como reglas. El éxito, se aleja cada vez más de ser alcanzado de una sola forma, pues la versatilidad dentro del pop se presenta como una tendencia y casi una necesidad. 
+
+# Link Miro
+https://miro.com/app/board/uXjVIweD7do=/?share_link_id=300896259866
