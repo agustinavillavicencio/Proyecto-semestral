@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Horizon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: white;
+  color: #ff00c8;
+}
+
+.logo_giratorio {
+  width: 100px;
+  margin: 30px auto 10px auto;
+  display: block;
+  animation: spin 5s linear infinite;
+}
+
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
+.titulo-logo {
+  text-align: center;
+  font-family: 'Horizon', sans-serif;
+  font-size: 2.8rem;
+  color: #c9a2e6;
+  margin-bottom: 40px;
+}
+
+
+.scroll-fade {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.scroll-fade.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
