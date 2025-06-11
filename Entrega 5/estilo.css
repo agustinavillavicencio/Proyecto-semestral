@@ -9,10 +9,12 @@ body {
 }
 
 .logo_giratorio {
-  width: 100px;
+  width: 400px;
+  height: 400px;
   margin: 30px auto 10px auto;
   display: block;
   animation: spin 5s linear infinite;
+  align-items: center;
 }
 
 
@@ -20,16 +22,6 @@ body {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
-
-
-.titulo-logo {
-  text-align: center;
-  font-family: 'Horizon', sans-serif;
-  font-size: 2.8rem;
-  color: #c9a2e6;
-  margin-bottom: 40px;
-}
-
 
 .scroll-fade {
   opacity: 0;
