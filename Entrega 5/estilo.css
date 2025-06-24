@@ -36,10 +36,8 @@ body {
   max-width: 400px;         /* más angosto */
   padding: 24px 28px;       /* espacio interno */
   margin: 400px 0;          /* espacio vertical más grande */
-  font-size: 0.5 rem;
-  text-align: justify;
+  font-size: 1.1rem;
   border-radius: 16px;
-/* color suave, puedes cambiar */
   position: relative;
 }
 
@@ -83,3 +81,55 @@ body {
   line-height: 1.3;
   max-width: 1000px;
 }
+
+/* SECCIÓN CON FONDO Y POSICIÓN RELATIVA */
+.seccion-artistas {
+  background-image: url('/Users/agustinavillavicencio/Desktop/Proyecto-semestral/Diseño sin título (1).jpg'); /* cambia por tu imagen real */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative; /* IMPORTANTE: ancla lo que está dentro */
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* CONTENEDOR DE LAS IMÁGENES */
+.collage-artistas {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 420px;
+  z-index: 2;
+  transform: translateX(-6%); /* 👈 mueve todo hacia la izquierda */
+
+}
+
+/* ESTILO DE LAS IMÁGENES */
+.artista-img {
+  position: absolute;
+  width: 270px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+
+/* EFECTO AL PASAR EL MOUSE */
+.artista-img:hover {
+  transform: scale(1.12);
+  z-index: 5;
+}
+
+/* POSICIÓN DE CADA IMAGEN (COLLAGE) */
+.img1 { left: 0%; bottom: 0; transform: rotate(-4deg); }
+.img2 { left: 9%; bottom: 10px; transform: rotate(2deg); }
+.img3 { left: 18%; bottom: 5px; transform: rotate(-3deg); }
+.img4 { left: 27%; bottom: 15px; transform: rotate(3deg); }
+.img5 { left: 36%; bottom: 8px; transform: rotate(-2deg); }
+.img6 { left: 45%; bottom: 12px; transform: rotate(4deg); }
+.img7 { left: 54%; bottom: 0; transform: rotate(-3deg); }
+.img8 { left: 63%; bottom: 10px; transform: rotate(2deg); }
+.img9 { left: 72%; bottom: 5px; transform: rotate(-2deg); }
+.img10 { left: 81%; bottom: 14px; transform: rotate(3deg); }
+.img11 { left: 90%; bottom: 0; transform: rotate(-3deg); }
