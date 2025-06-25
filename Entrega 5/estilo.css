@@ -133,3 +133,17 @@ body {
 .img9 { left: 72%; bottom: 5px; transform: rotate(-2deg); }
 .img10 { left: 81%; bottom: 14px; transform: rotate(3deg); }
 .img11 { left: 90%; bottom: 0; transform: rotate(-3deg); }
+
+.seccion-visualizacion {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.iframe-visual {
+  width: 100%;
+  height: 100vh;
+  border: none;
+}
