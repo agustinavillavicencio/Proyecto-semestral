@@ -1,7 +1,7 @@
 # Características de los datos:
 Acá se intentó analizar la evolución de las artistas pop contemporáneas más populares y con más hits en los Year-End charts de Billboard desde 2020 hasta 2024 a partir de los cambios que han experimentado entre sus distintas eras o álbumes. La base de datos fue construida a partir de un análisis comparativo de sus transformaciones entre un mínimo de dos y un máximo de tres momentos clave (o eras) en sus carreras. Cada artista fue evaluada en base a categorías que permiten identificar si se mantienen fieles a una narrativa y estética o si, por el contrario, presentan una mutación significativa que podría explicar su sostenida relevancia en la industria.
 
-# Variables y sus descripciones 
+#Variables y sus descripciones 
 
 Cada artista fue evaluada en tres categorías centrales:
 
