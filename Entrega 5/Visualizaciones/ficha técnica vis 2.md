@@ -14,3 +14,7 @@ Algunas variables se basan en percepciones estéticas o culturales, por lo que s
 La base permite ver que no todas las artistas actuales encajan perfectamente en los subperfiles clásicos, y que muchas tienen combinaciones nuevas que antes no eran tan comunes.
 
 Se observa una alta heterogeneidad entre las artistas, lo que refuerza la hipótesis de que hoy no hay un solo molde de popstar dominante, sino muchas formas de construir una figura exitosa.
+
+
+
+
