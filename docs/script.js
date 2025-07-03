@@ -31,6 +31,7 @@ const infoArtistas = {
   Katy: "hola",
 };
 
+
 // Mostrar popup
 document.querySelectorAll('.boton-artista').forEach(img => {
   img.addEventListener('click', () => {
@@ -45,6 +46,23 @@ document.querySelectorAll('.boton-artista').forEach(img => {
 document.querySelector('.cerrar').addEventListener('click', () => {
   document.getElementById('popup').style.display = 'none';
 });
+
+(function(vegaEmbed) {
+  // todo el largo código del gráfico, hasta el vegaEmbed del final que busca un elemento html con un id específico para insertar el gráfico (esto es lo más importante y debe ser el mismo id que el que se encuentra en el archivo HTML)
+   var embedOpt = {"mode": "vega-lite"};
+
+    function showError(el, error){
+        el.innerHTML = ('<div class="error" style="color:red;">'
+                        + '<p>JavaScript Error: ' + error.message + '</p>'
+                        + "<p>This usually means there's a typo in your chart specification. "
+                        + "See the javascript console for the full traceback.</p>"
+                        + '</div>');
+        throw error;
+    }
+    const el = document.getElementById('vis');
+    vegaEmbed("#vis", spec, embedOpt)
+      .catch(error => showError(el, error));
+})(vegaEmbed);
 
 AOS.init({
   once: true,
