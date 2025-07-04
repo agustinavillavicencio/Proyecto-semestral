@@ -339,22 +339,20 @@ body {
   text-align: center;
 }
 
-.seccion-visualizacion-full {
+.seccion-visualizacion {
   width: 100%;
-  height: 100vh; /* toda la pantalla */
-  padding: 0;
-  margin: 0;
-  background-color: white; /* o el color que quieras */
+  height: 100vh;
   overflow: hidden;
   position: relative;
+  z-index: 1;
 }
 
-.iframe-visual-full {
+.iframe-visual {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   border: none;
-  display: block;
 }
+
 
 
 
