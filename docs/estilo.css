@@ -177,13 +177,36 @@ body {
 }
 
 .seccion-rosada {
-  background-color: #FF00C8;
-  height: 100vh;
+  background-color: #ff00aa; /* Rosado fluor */
+  color: white; /* Para buen contraste con el fondo */
+  padding: 60px 20px;
+  text-align: center;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 40px;
-  box-sizing: border-box;
+}
+
+.contenedor-texto {
+  max-width: 900px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.parrafo-superior,
+.parrafo-inferior {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.iframe-visual-rosado {
+  width: 100%;
+  height: 60vh;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
 }
 
 
