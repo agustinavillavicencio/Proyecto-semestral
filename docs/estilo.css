@@ -299,7 +299,7 @@ body {
 
 .seccion-scroll-espaciada {
   background-color: #C6FF1A;
-  min-height: 170vh; /* altura extendida para permitir scroll largo */
+  min-height: 100vh; /* altura extendida para permitir scroll largo */
   display: flex;
   flex-direction: column;
   justify-content: start;
