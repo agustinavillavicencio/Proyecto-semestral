@@ -297,6 +297,41 @@ body {
   transform: rotate(0deg);
 }
 
+.seccion-verde-fluor {
+  background-color: #C6FF1A; /* verde fluor */
+  height: 100vh; /* ocupa toda la pantalla */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* separa verticalmente los párrafos */
+  padding: 40px 60px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.parrafo-izquierda {
+  align-self: flex-start;
+  max-width: 400px;
+  font-size: 1.2rem;
+  color: #111;
+}
+
+.parrafo-centro {
+  align-self: center;
+  max-width: 400px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #111;
+  text-align: center;
+}
+
+.parrafo-derecha {
+  align-self: flex-end;
+  max-width: 400px;
+  font-size: 1.2rem;
+  color: #111;
+  text-align: right;
+}
+
 
 
 
