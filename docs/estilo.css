@@ -310,26 +310,31 @@ body {
   text-align: right;
 }
 
+/* Sección visualización */
 .visualizacion-seccion {
-  width: 100vw; /* Usa todo el ancho de la ventana */
+  width: 100vw;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  background-color: white; /* O el que uses */
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  box-sizing: border-box;
 }
 
 .iframe-visualizacion {
   width: 100%;
-  height: 600px; /* Ajusta según el alto de tu gráfico */
+  max-width: 1200px;
+  height: 600px;
   border: none;
   display: block;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  box-sizing: border-box;
 }
-
 
 /* Sección rosada */
 .seccion-titular-latido {
@@ -338,19 +343,18 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 60px 20px;
+  padding: 80px 20px 100px 20px; /* Espaciado arriba y abajo para separación clara */
   text-align: center;
+  box-sizing: border-box;
 }
 
-/* Contenedor centrado */
 .contenedor-titular {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 30px;
 }
 
-/* Mini frase arriba */
 .mini-frase {
   font-family: 'Poppins', sans-serif;
   font-size: 1rem;
@@ -358,13 +362,13 @@ body {
   margin: 0;
 }
 
-/* Titular principal con latido */
 .titular-latido {
   font-family: 'Orbitron', sans-serif;
   color: white;
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   animation: latido 2.9s infinite;
   margin: 0;
+  text-align: center;
 }
 
 @keyframes latido {
@@ -374,5 +378,6 @@ body {
   75%  { transform: scale(1.05);  opacity: 0.85; }
   100% { transform: scale(1);     opacity: 1; }
 }
+
 
 
