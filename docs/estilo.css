@@ -128,44 +128,37 @@ body {
 .img10 { left: 81%; bottom: 14px; transform: rotate(3deg); }
 .img11 { left: 90%; bottom: 0; transform: rotate(-3deg); }
 
-.seccion-hipotesis {
+.hipotesis-seccion {
   background-color: white;
   min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   box-sizing: border-box;
 }
 
-.contenedor-parrafos {
+.hipotesis-fila {
   display: flex;
-  flex-direction: row; /* IMPORTANTE: disposición horizontal */
-  justify-content: center;
-  align-items: flex-start;
-  gap: 40px;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 60px;
   max-width: 1200px;
   width: 100%;
 }
 
-.columna {
+.hipotesis-col {
   flex: 1;
-  max-width: 500px;
 }
 
-.columna p {
+.hipotesis-col p {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   color: #ff00c8;
   text-align: justify;
-  line-height: 1.7;
+  line-height: 1.6;
 }
 
-
-
-.aos-animate {
-  opacity: 1 !important;
-}
 
 .seccion-visualizacion {
   width: 100%;
@@ -191,18 +184,6 @@ body {
   box-sizing: border-box;
 }
 
-.contenedor-parrafos {
-  display: flex;
-  gap: 60px;
-  max-width: 1200px;
-  padding: 40px;
-}
-
-.columna {
-  flex: 1;
-  opacity: 0;
-  transition: opacity 0.5s ease;
-}
 
 .seccion-subperfiles {
   background-color: #C6FF1A;
