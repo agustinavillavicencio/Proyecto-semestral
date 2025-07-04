@@ -299,14 +299,15 @@ body {
 
 .seccion-scroll-espaciada {
   background-color: #C6FF1A;
-  min-height: 100vh; /* altura extendida para permitir scroll largo */
+  min-height: 100vh; /* o lo que necesites, NO 300vh */
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: flex-start;
   padding: 100px 40px;
-  gap: 200px; /* espacio vertical entre los párrafos */
+  gap: 200px;
   position: relative;
 }
+
 
 .parrafo-scroll {
   max-width: 600px;
@@ -339,7 +340,7 @@ body {
   height: 100vh;
   overflow: auto;
   position: relative;
-  z-index: 1;
+  margin-top: 80px;
 }
 
 .iframe-visual {
@@ -359,6 +360,8 @@ body {
   align-items: center;
   text-align: center;
   gap: 40px;
+  margin-top: 80px;
+
 }
 
 .frase-intro {
