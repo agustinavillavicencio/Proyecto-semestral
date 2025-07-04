@@ -299,38 +299,40 @@ body {
 
 .seccion-verde-fluor {
   background-color: #C6FF1A; /* verde fluor */
-  height: 100vh; /* ocupa toda la pantalla */
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between; /* separa verticalmente los párrafos */
+  flex-direction: row; /* columnas lado a lado */
+  justify-content: space-between; /* separa columnas */
   padding: 40px 60px;
   box-sizing: border-box;
-  position: relative;
 }
 
-.parrafo-izquierda {
-  align-self: flex-start;
-  max-width: 400px;
+/* Cada columna ocupa 1/3 ancho */
+.parrafo-vertical {
+  width: 30%;
+  color: #111;
   font-size: 1.2rem;
-  color: #111;
+  writing-mode: vertical-rl; /* texto vertical, se lee de arriba a abajo */
+  text-orientation: mixed;
+  line-height: 1.5;
 }
 
-.parrafo-centro {
-  align-self: center;
-  max-width: 400px;
-  font-size: 1.3rem;
-  font-weight: 600;
-  color: #111;
+/* Alineaciones dentro de cada columna */
+.izquierda {
+  text-align: start;
+  justify-content: flex-start;
+}
+
+.centro {
   text-align: center;
+  justify-content: center;
 }
 
-.parrafo-derecha {
-  align-self: flex-end;
-  max-width: 400px;
-  font-size: 1.2rem;
-  color: #111;
-  text-align: right;
+.derecha {
+  text-align: end;
+  justify-content: flex-end;
 }
+
 
 
 
