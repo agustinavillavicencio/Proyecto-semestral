@@ -298,15 +298,16 @@ body {
 }
 
 .seccion-scroll-verde {
-  background-color: #C6FF1A; /* verde fluor */
-  min-height: 300vh; /* alto para permitir scroll largo */
+  background-color: #C6FF1A;
+  min-height: 300vh;
   position: relative;
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
-/* Estilo común para los párrafos */
-.parrafo-vertical {
+/* Estilo común */
+.parrafo {
   position: absolute;
   max-width: 600px;
   font-family: 'Poppins', sans-serif;
@@ -314,9 +315,10 @@ body {
   color: #111;
   line-height: 1.7;
   padding: 20px;
+  box-sizing: border-box;
 }
 
-/* Posicionamientos específicos */
+/* Posiciones específicas */
 .arriba-izquierda {
   top: 5%;
   left: 5%;
@@ -335,6 +337,7 @@ body {
   right: 5%;
   text-align: right;
 }
+
 
 
 
