@@ -335,6 +335,7 @@ body {
 
 .seccion-visualizacion {
   width: 100%;
+  background-color: white;
   height: 100vh;
   overflow: hidden;
   position: relative;
@@ -346,6 +347,40 @@ body {
   height: 100vh;
   border: none;
 }
+
+.seccion-rosada-latido {
+  background-color: #ff00aa; /* Rosado fluor */
+  color: white;
+  min-height: 100vh;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 40px;
+}
+
+.frase-intro {
+  font-size: 1.2rem;
+  max-width: 800px;
+}
+
+.texto-latido {
+  font-size: 3rem;
+  font-weight: bold;
+  animation: latido 1.5s infinite;
+}
+
+/* Efecto de latido */
+@keyframes latido {
+  0% { transform: scale(1); }
+  25% { transform: scale(1.05); }
+  50% { transform: scale(1); }
+  75% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
 
 
 
