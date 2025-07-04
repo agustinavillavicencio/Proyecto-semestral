@@ -332,13 +332,13 @@ body {
 
 /* Texto vertical */
 .parrafo-vertical {
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
   font-size: 1.2rem;
-  line-height: 1.5;
-  max-width: 1.5em; /* ancho limitado para que no quede muy ancho */
   color: #111;
+  line-height: 1.6;
 }
+
 
 
 
