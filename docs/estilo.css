@@ -310,48 +310,6 @@ body {
   text-align: right;
 }
 
-/* Sección rosada */
-.seccion-titular-latido {
-  background-color: #FF00C8;
-  min-height: 60vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 80px 20px 100px 20px; /* Espaciado arriba y abajo para separación clara */
-  text-align: center;
-  box-sizing: border-box;
-}
-
-.contenedor-titular {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
-}
-
-.mini-frase {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1rem;
-  color: white;
-  margin: 0;
-}
-
-.titular-latido {
-  font-family: 'Orbitron', sans-serif;
-  color: white;
-  font-size: 2.8rem;
-  animation: latido 2.9s infinite;
-  margin: 0;
-  text-align: center;
-}
-
-@keyframes latido {
-  0%   { transform: scale(1);     opacity: 1; }
-  25%  { transform: scale(1.05);  opacity: 0.85; }
-  50%  { transform: scale(1);     opacity: 1; }
-  75%  { transform: scale(1.05);  opacity: 0.85; }
-  100% { transform: scale(1);     opacity: 1; }
-}
 
 
 
