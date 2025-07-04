@@ -310,16 +310,23 @@ body {
   text-align: right;
 }
 
-#visualizacion-2 {
-  padding: 40px 20px;
-  background-color: #f9f9f9;
-  text-align: center;
+.pantalla-completa {
+  height: 100vh;
+  width: 100%;
+  background-color: white; /* O el color que prefieras */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
 }
 
-#visualizacion-2 iframe {
-  max-width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+.pantalla-completa iframe {
+  width: 90%;
+  height: 90%;
+  border: none;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  border-radius: 10px;
 }
 
 
