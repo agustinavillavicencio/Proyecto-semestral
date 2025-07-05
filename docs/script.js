@@ -55,10 +55,10 @@ AOS.init({
 
 function mostrarTexto(tipo) {
   const textos = {
-    Arquitecta: "Artistas que se definen por una carga emotiva intensa en sus letras, interpretaciones y discursos públicos. Conectan desde la vulnerabilidad.",
-    Performatica: "Popstars cuya fuerza está en el escenario: shows complejos, coreografías potentes, cuerpos en movimiento y energía escénica total.",
-    Estética: "Figuras que construyen su identidad a través de lo visual: vestuarios icónicos, maquillajes, portadas y una coherencia estética marcada.",
-    Íntima: "Artistas que se acercan al público desde historias personales, confesiones y una comunicación emocional directa. Parecen cercanas, reales."
+    Arquitecta: "Estilo elegante y sofisticado, presencia dominante y segura en escena, comunicación asertiva y manejo estratégico de imagen pública.",
+    Performatica: "Estética llamativa y experimental, desplante teatral y explosivo, actitud disruptiva, uso de símbolos visuales, interacción fuerte con fans.",
+    Estética: "Estilo variable, actitud resiliente y abierta, comunicación franca sobre luchas personales, desplante fluctuante.",
+    Íntima: "Estilo sobrio y simple, desplante íntimo y emocional, comunicación cercana y empática, narrativas personales profundas."
   };
 
   const imagenes = {
