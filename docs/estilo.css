@@ -203,10 +203,9 @@ body {
 
 .iframe-visual-rosado {
   width: 100%;
-  height: 80vh;
+  max-width: 1000px;
+  height: 600px;
   border: none;
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
 }
 
 
