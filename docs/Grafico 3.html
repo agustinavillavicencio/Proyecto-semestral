@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"name": "data-c0b770074ff63848a475c6d46d2d5c21"}, "facet": {"column": {"field": "Artista", "header": {"labelOrient": "bottom", "titleOrient": "bottom"}, "title": "N\u00famero de Era (\u00e1lbum)", "type": "nominal"}}, "spec": {"mark": {"type": "line", "point": true}, "encoding": {"color": {"field": "Artista", "legend": null, "scale": {"domain": ["Olivia Rodrigo", "Doja Cat", "Billie Eilish", "Dua Lipa", "Sabrina Carpenter"], "range": ["#FF00C8", "#C6FF1A", "#C9A2E6"]}, "type": "nominal"}, "tooltip": [{"field": "Artista", "type": "nominal"}, {"field": "A\u00f1o", "type": "quantitative"}, {"field": "Album", "type": "nominal"}, {"field": "Promedio de transformaci\u00f3n", "type": "quantitative"}], "x": {"field": "Numero de era", "title": null, "type": "ordinal"}, "y": {"field": "Promedio de transformaci\u00f3n", "scale": {"domainMax": 2.2, "domainMin": 0.8}, "title": "Promedio de transformaci\u00f3n", "type": "quantitative"}}, "width": 100}, "title": {"text": "Transformaci\u00f3n por Era (\u00e1lbum)", "align": "center", "anchor": "middle"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json", "datasets": {"data-c0b770074ff63848a475c6d46d2d5c21": [{"Artista": "Olivia Rodrigo", "A\u00f1o": 2021, "Album": "Sour", "Numero de era": 1, "Cambio visual": 1, "Cambio musical": 1, "Cambio l\u00edrico": 1, "Promedio de transformaci\u00f3n": 1.0}, {"Artista": "Olivia Rodrigo", "A\u00f1o": 2023, "Album": "Guts", "Numero de era": 2, "Cambio visual": 2, "Cambio musical": 2, "Cambio l\u00edrico": 2, "Promedio de transformaci\u00f3n": 2.0}, {"Artista": "Doja Cat", "A\u00f1o": 2021, "Album": "Planet Her", "Numero de era": 1, "Cambio visual": 1, "Cambio musical": 1, "Cambio l\u00edrico": 1, "Promedio de transformaci\u00f3n": 1.0}, {"Artista": "Doja Cat", "A\u00f1o": 2023, "Album": "Scarlet", "Numero de era": 2, "Cambio visual": 2, "Cambio musical": 2, "Cambio l\u00edrico": 2, "Promedio de transformaci\u00f3n": 2.0}, {"Artista": "Billie Eilish", "A\u00f1o": 2021, "Album": "Happier Than Ever", "Numero de era": 1, "Cambio visual": 1, "Cambio musical": 1, "Cambio l\u00edrico": 1, "Promedio de transformaci\u00f3n": 1.0}, {"Artista": "Billie Eilish", "A\u00f1o": 2024, "Album": "Hit Me Hard and Soft", "Numero de era": 2, "Cambio visual": 2, "Cambio musical": 2, "Cambio l\u00edrico": 2, "Promedio de transformaci\u00f3n": 2.0}, {"Artista": "Dua Lipa", "A\u00f1o": 2020, "Album": "Future Nostalgia", "Numero de era": 1, "Cambio visual": 1, "Cambio musical": 1, "Cambio l\u00edrico": 1, "Promedio de transformaci\u00f3n": 1.0}, {"Artista": "Dua Lipa", "A\u00f1o": 2024, "Album": "Radical Optimismo", "Numero de era": 2, "Cambio visual": 2, "Cambio musical": 2, "Cambio l\u00edrico": 1, "Promedio de transformaci\u00f3n": 1.67}, {"Artista": "Sabrina Carpenter", "A\u00f1o": 2022, "Album": "Emails i Cant Send", "Numero de era": 1, "Cambio visual": 1, "Cambio musical": 1, "Cambio l\u00edrico": 1, "Promedio de transformaci\u00f3n": 1.0}, {"Artista": "Sabrina Carpenter", "A\u00f1o": 2024, "Album": "Short n Sweet", "Numero de era": 2, "Cambio visual": 2, "Cambio musical": 2, "Cambio l\u00edrico": 2, "Promedio de transformaci\u00f3n": 2.0}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
