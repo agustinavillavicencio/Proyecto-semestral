@@ -100,11 +100,6 @@ function mostrarTexto(tipo) {
   });
 }
 
-
-
-
-
-
 const logo = document.querySelector('.logo_giratorio');
 window.addEventListener('scroll', () => {
   if (window.scrollY > 50) {
@@ -113,6 +108,23 @@ window.addEventListener('scroll', () => {
     logo.style.opacity = '1';
   }
 });
+
+function alternarVisualizaciones() {
+  const viz1 = document.getElementById("viz1");
+  const viz2 = document.getElementById("viz2");
+
+  if (viz1.classList.contains("active")) {
+    viz1.classList.remove("active");
+    setTimeout(() => {
+      viz2.classList.add("active");
+    }, 700); // Delay para que aparezca justo cuando la otra se desvanece
+  } else {
+    viz2.classList.remove("active");
+    setTimeout(() => {
+      viz1.classList.add("active");
+    }, 700);
+  }
+}
 
 
 
