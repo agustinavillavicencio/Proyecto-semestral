@@ -202,7 +202,7 @@ body {
 }
 
 .iframe-visual-rosado {
-  width: 130%;
+  width: 100%;
   height: 80vh;
   border: none;
   border-radius: 10px;
@@ -353,52 +353,91 @@ body {
   border: none;
 }
 
-/* Sección rosada flúor */
-.seccion-rosada-latido {
+/* Sección rosada */
+.seccion-rosada-texto {
   background-color: #FF00C8;
-  width: 100vw;
-  min-height: 100vh;
-  padding: 60px 20px;
+  min-height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-sizing: border-box;
+  padding: 60px 20px;
   text-align: center;
 }
 
-/* Contenedor del texto */
-.contenedor-texto-latido {
+.contenedor-frases {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
 }
 
-/* Texto pequeño */
-.mini-frase-rosada {
+.frase-intro {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  color: white;
+  margin: 0;
+}
+
+/* Visualización */
+.visualizacion-seccion {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iframe-visualizacion {
+  width: 100%;
+  height: 600px;
+  border: none;
+  display: block;
+}
+
+/* Sección latido */
+.seccion-titular-latido {
+  background-color: #FF00C8;
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contenedor-titular {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.mini-frase {
   font-family: 'Poppins', sans-serif;
   font-size: 1rem;
   color: white;
   margin: 0;
 }
 
-/* Texto principal con latido */
-.texto-latido-rosado {
+.titular-latido {
   font-family: 'Orbitron', sans-serif;
-  font-size: 2.8rem;
   color: white;
+  font-size: 2.5rem;
+  animation: latido 2.9s infinite;
   margin: 0;
-  animation: latido 2.5s infinite;
 }
 
-/* Animación de latido */
 @keyframes latido {
   0%   { transform: scale(1);     opacity: 1; }
-  25%  { transform: scale(1.05);  opacity: 0.9; }
+  25%  { transform: scale(1.05);  opacity: 0.85; }
   50%  { transform: scale(1);     opacity: 1; }
-  75%  { transform: scale(1.05);  opacity: 0.9; }
+  75%  { transform: scale(1.05);  opacity: 0.85; }
   100% { transform: scale(1);     opacity: 1; }
 }
+
 
 
 
