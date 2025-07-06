@@ -109,21 +109,35 @@ window.addEventListener('scroll', () => {
   }
 });
 
+let mostrandoPrimera = true;
+
 function alternarVisualizaciones() {
   const viz1 = document.getElementById("viz1");
   const viz2 = document.getElementById("viz2");
 
-  if (viz1.classList.contains("active")) {
-    viz1.classList.remove("active");
+  if (mostrandoPrimera) {
+    // Mostrar la segunda por encima
+    viz2.classList.add("visible");
+
+    // Luego de 1.5 segundos, ocultar la primera
     setTimeout(() => {
-      viz2.classList.add("active");
-    }, 700); // Delay para que aparezca justo cuando la otra se desvanece
+      viz1.classList.remove("visible");
+      viz1.classList.add("oculto");
+    }, 1500);
+
   } else {
-    viz2.classList.remove("active");
+    // Mostrar la primera por encima
+    viz1.classList.add("visible");
+
+    // Luego de 1.5 segundos, ocultar la segunda
     setTimeout(() => {
-      viz1.classList.add("active");
-    }, 700);
+      viz2.classList.remove("visible");
+      viz2.classList.add("oculto");
+    }, 1500);
   }
+
+  // Alternar estado
+  mostrandoPrimera = !mostrandoPrimera;
 }
 
 
