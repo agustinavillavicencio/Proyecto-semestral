@@ -109,35 +109,21 @@ window.addEventListener('scroll', () => {
   }
 });
 
-let mostrandoPrimera = true;
+let vizMostrada = false;
 
-function alternarVisualizaciones() {
+function alternarVisualizacion() {
   const viz1 = document.getElementById("viz1");
   const viz2 = document.getElementById("viz2");
 
-  if (mostrandoPrimera) {
-    // Mostrar la segunda por encima
-    viz2.classList.add("visible");
-
-    // Luego de 1.5 segundos, ocultar la primera
-    setTimeout(() => {
-      viz1.classList.remove("visible");
-      viz1.classList.add("oculto");
-    }, 1500);
-
+  if (!vizMostrada) {
+    // Mostrar visualización 2 encima
+    viz2.style.opacity = "1";
   } else {
-    // Mostrar la primera por encima
-    viz1.classList.add("visible");
-
-    // Luego de 1.5 segundos, ocultar la segunda
-    setTimeout(() => {
-      viz2.classList.remove("visible");
-      viz2.classList.add("oculto");
-    }, 1500);
+    // Ocultar visualización 2 para volver a ver la 1
+    viz2.style.opacity = "0";
   }
 
-  // Alternar estado
-  mostrandoPrimera = !mostrandoPrimera;
+  vizMostrada = !vizMostrada;
 }
 
 

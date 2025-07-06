@@ -142,21 +142,19 @@
         </section>
 
         <section class="seccion-comparacion">
-          <div class="contenedor-parrafos">
-            <p class="parrafo-comparacion">
-              La visualización 1 muestra cómo se agrupan las popstars más influyentes según patrones físicos, simbólicos y estilísticos. Aunque sus estilos son distintos, muchas comparten elementos que permiten clasificarlas.
-            </p>
-            <p class="parrafo-comparacion">
-              La segunda visualización incorpora nuevas artistas para contrastar si esos moldes persisten hoy. Este cruce revela un cambio: las nuevas voces del pop ya no responden de forma tan clara a esos patrones.
-            </p>
+          <div class="contenedor-textos">
+            <p class="parrafo-comparacion">Ambas visualizaciones permiten entender cómo ha cambiado el molde del pop desde las artistas consagradas hasta las nuevas figuras.</p>
+            <p class="parrafo-comparacion">Presiona el botón para superponer la segunda visualización y comparar los perfiles directamente.</p>
           </div>
         
-          <div class="contenedor-visualizaciones">
-            <iframe src="Global visualización 1.html" class="iframe-comparacion active" id="viz1"></iframe>
-            <iframe src="Global visualización 2 (1).html" class="iframe-comparacion" id="viz2"></iframe>
-            <button onclick="alternarVisualizaciones()" class="boton-viz">Ver otra visualización</button>
+          <div class="contenedor-superpuesto">
+            <iframe id="viz1" src="visualizacion1.html" class="iframe-superpuesto"></iframe>
+            <iframe id="viz2" src="visualizacion2.html" class="iframe-superpuesto" style="opacity: 0;"></iframe>
           </div>
+        
+          <button onclick="alternarVisualizacion()" class="boton-superponer">Comparar visualizaciones</button>
         </section>
+        
         
         
 
