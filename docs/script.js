@@ -120,13 +120,4 @@ function toggleVisualizacion() {
   }
 }
 
-window.addEventListener('scroll', () => {
-  document.querySelectorAll('.scroll-fade').forEach(el => {
-    const rect = el.getBoundingClientRect();
-    if (rect.top < window.innerHeight * 0.9) {
-      el.classList.add('visible');
-    }
-  });
-});
-
 
