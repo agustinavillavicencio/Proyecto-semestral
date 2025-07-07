@@ -32,17 +32,31 @@ body {
   padding: 60px 0;
 }
 
+/* Contenedor principal de cada bloque: texto e imágenes lado a lado */
+.bloque-intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 10%;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+/* Texto */
+.texto {
+  flex: 1;
+  max-width: 500px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: justify;
+  padding: 0 20px;
+}
+
+/* Para controlar la alineación del texto (opcional fade-in) */
 .scroll-fade {
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 1s ease-out, transform 1s ease-out;
-
-  max-width: 400px;         
-  padding: 24px 28px;       
-  margin: 400px 0;          
-  font-size: 1.1rem;
-  border-radius: 16px;
-  position: relative;
 }
 
 .scroll-fade.visible {
@@ -50,74 +64,26 @@ body {
   transform: translateY(0);
 }
 
-
 .scroll-fade.left {
-  margin-left: 12%;
   text-align: left;
-  text-align: justify;
 }
 
 .scroll-fade.right {
-  margin-right: 12%;
-  margin-left: auto;
   text-align: right;
-  text-align: justify;
 }
 
-.collage-container {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.collage-container.right {
-  align-items: flex-end;
-}
-
-.collage-images {
-  position: absolute;
-  top: -120px;
-  z-index: -1;
-}
-
-.collage-container.right .collage-images {
-  right: -120px;
-}
-
-.collage-container.left .collage-images {
-  left: -120px;
-}
-
-/* Cuando se hace scroll y se activa */
-.scroll-fade.visible .fade-img .img-collage {
-  opacity: 1;
-  transform: translateY(0) rotate(0deg);
-}
-
-.bloque-intro {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 100px 10%;
-  gap: 60px;
-  flex-wrap: wrap;
-}
-
-.texto {
-  flex: 1;
-  min-width: 280px;
-}
-
+/* Contenedor de imágenes */
 .imagenes {
   flex: 1;
-  min-width: 280px;
+  max-width: 500px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 20px;
+  padding: 0 20px;
+  justify-content: center;
 }
 
+/* Para que las imágenes se alineen a la derecha o izquierda */
 .imagenes-derecha {
   align-items: flex-end;
 }
@@ -126,9 +92,11 @@ body {
   align-items: flex-start;
 }
 
+/* Estilo imágenes */
 .img-collage {
   width: 180px;
   border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
   transition: transform 0.3s ease;
 }
 
@@ -136,6 +104,7 @@ body {
   transform: scale(1.05);
 }
 
+/* Rotaciones para el collage */
 .rotar-izq {
   transform: rotate(-5deg);
 }
@@ -143,19 +112,6 @@ body {
 .rotar-der {
   transform: rotate(5deg);
 }
-
-/* Mantén el efecto de fade que ya usas */
-.scroll-fade {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 1s ease-out, transform 1s ease-out;
-}
-
-.scroll-fade.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
 
 
 .seccion-destacada {
