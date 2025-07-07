@@ -388,11 +388,13 @@ body {
 /* Visualizaciones */
 .contenedor-visualizaciones {
   position: relative;
-  width: 100vw;
+  width: 90vw;
   height: 90vh;
+  max-width: 1200px;
   margin: 0 auto;
   border-radius: 16px;
   overflow: hidden;
+  
 }
 
 .iframe-base,
@@ -427,7 +429,7 @@ body {
   border-radius: 30px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  margin-top: -70px;
+  margin-top: -90px;
 }
 
 .boton-cambio:hover {
