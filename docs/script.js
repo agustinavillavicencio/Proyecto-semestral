@@ -109,21 +109,23 @@ window.addEventListener('scroll', () => {
   }
 });
 
-let vizMostrada = false;
+let visualizacion2Visible = false;
 
-function alternarVisualizacion() {
-  const viz1 = document.getElementById("viz1");
-  const viz2 = document.getElementById("viz2");
+function toggleVisualizacion2() {
+  const vis2 = document.querySelector('.iframe-superpuesta');
+  const boton = document.getElementById('boton-comparar');
 
-  if (!vizMostrada) {
-    // Mostrar visualización 2 encima
-    viz2.style.opacity = "1";
+  if (!visualizacion2Visible) {
+    vis2.style.opacity = '1';
+    vis2.style.pointerEvents = 'auto';
+    boton.textContent = 'Ocultar comparación';
+    visualizacion2Visible = true;
   } else {
-    // Ocultar visualización 2 para volver a ver la 1
-    viz2.style.opacity = "0";
+    vis2.style.opacity = '0';
+    vis2.style.pointerEvents = 'none';
+    boton.textContent = 'Comparar visualización';
+    visualizacion2Visible = false;
   }
-
-  vizMostrada = !vizMostrada;
 }
 
 

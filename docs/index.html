@@ -127,33 +127,41 @@
         </section>
         
         <section class="seccion-rosada-visualizacion">
-          <div class="contenedor-textos-visualizacion">
-            <p class="frase-pequena">Las nuevas artistas del pop se alejan cada vez más de los patrones clásicos que definieron a las grandes del siglo</p>
+          <div class="contenedor-parrafos-scroll">
+            <p class="parrafo-scroll">
+              Las nuevas artistas del pop se alejan cada vez más de los patrones clásicos que definieron a las grandes del siglo.
+            </p>
+            <p class="parrafo-scroll">
+              Ya no hay un molde dominante: hoy las diferencias en estilo, cuerpo, narrativa o performance se transforman en los motores del estrellato.
+            </p>
+          </div>
+        
+          <div class="contenedor-visualizaciones">
+            <iframe 
+              src="Global visualización 1.html" 
+              class="iframe-base" 
+              frameborder="0">
+            </iframe>
         
             <iframe 
               src="Global visualización 2 (1).html" 
-              class="iframe-grande" 
-              frameborder="0" 
-              scrolling="no">
+              class="iframe-superpuesta" 
+              frameborder="0">
             </iframe>
+          </div>
         
-            <h2 class="frase-latido">El molde ya no es regla: hoy, la diferencia construye estrellato</h2>
+          <button id="boton-comparar" class="boton-comparar" onclick="toggleVisualizacion2()">
+            Comparar visualización
+          </button>
+        
+          <div class="contenedor-latido">
+            <h2 class="frase-latido">
+              El molde ya no es regla: hoy, la diferencia construye estrellato
+            </h2>
           </div>
         </section>
-
-        <section class="seccion-comparacion">
-          <div class="contenedor-textos">
-            <p class="parrafo-comparacion">Ambas visualizaciones permiten entender cómo ha cambiado el molde del pop desde las artistas consagradas hasta las nuevas figuras.</p>
-            <p class="parrafo-comparacion">Presiona el botón para superponer la segunda visualización y comparar los perfiles directamente.</p>
-          </div>
         
-          <div class="contenedor-superpuesto">
-            <iframe id="viz1" src="Global visualización 1.html" class="iframe-superpuesto"></iframe>
-            <iframe id="viz2" src="Global visualización 2 (1).html" class="iframe-superpuesto" style="opacity: 0;"></iframe>
-          </div>
         
-          <button onclick="alternarVisualizacion()" class="boton-superponer">Comparar visualizaciones</button>
-        </section>
         
         
         
