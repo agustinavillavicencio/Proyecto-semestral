@@ -131,6 +131,68 @@ body {
   transform: translateY(0) rotate(0deg);
 }
 
+.bloque-intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 10%;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.texto {
+  flex: 1;
+  min-width: 280px;
+}
+
+.imagenes {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.imagenes-derecha {
+  align-items: flex-end;
+}
+
+.imagenes-izquierda {
+  align-items: flex-start;
+}
+
+.img-collage {
+  width: 180px;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.img-collage:hover {
+  transform: scale(1.05);
+}
+
+.rotar-izq {
+  transform: rotate(-5deg);
+}
+
+.rotar-der {
+  transform: rotate(5deg);
+}
+
+/* Mantén el efecto de fade que ya usas */
+.scroll-fade {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.scroll-fade.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
 
 .seccion-destacada {
   background-color: #C6FF1A;
