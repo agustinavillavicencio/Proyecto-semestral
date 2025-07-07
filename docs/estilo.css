@@ -331,9 +331,10 @@ body {
 }
 
 .centrado-final {
-  top: 5%;
-  left: 5%;
-  text-align: left;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .seccion-visualizacion {
