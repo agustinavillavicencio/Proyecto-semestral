@@ -52,6 +52,10 @@ body {
   padding: 0 20px;
 }
 
+.texto p {
+  text-align: justify !important;
+}
+
 /* Para controlar la alineación del texto (opcional fade-in) */
 .scroll-fade {
   opacity: 0;
