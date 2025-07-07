@@ -64,6 +64,74 @@ body {
   text-align: justify;
 }
 
+.collage-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.collage-container.right {
+  align-items: flex-end;
+}
+
+.collage-images {
+  position: absolute;
+  top: -120px;
+  z-index: -1;
+}
+
+.collage-container.right .collage-images {
+  right: -120px;
+}
+
+.collage-container.left .collage-images {
+  left: -120px;
+}
+
+.img-collage {
+  width: 150px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  position: absolute;
+  transition: opacity 1s ease-out, transform 1s ease-out;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+/* Posición y rotación de cada imagen */
+.img1 {
+  transform: rotate(-8deg) translateY(30px);
+  top: 0;
+  left: 0;
+}
+
+.img2 {
+  transform: rotate(6deg) translateY(30px);
+  top: 40px;
+  left: 40px;
+}
+
+.img3 {
+  transform: rotate(-6deg) translateY(30px);
+  top: 0;
+  right: 0;
+}
+
+.img4 {
+  transform: rotate(5deg) translateY(30px);
+  top: 50px;
+  right: 50px;
+}
+
+/* Cuando se hace scroll y se activa */
+.scroll-fade.visible .fade-img .img-collage {
+  opacity: 1;
+  transform: translateY(0) rotate(0deg);
+}
+
+
 .seccion-destacada {
   background-color: #C6FF1A;
   height: 110vh; 
@@ -359,7 +427,7 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 180px;
-  min-height: 400vh;
+  min-height: 500vh;
   text-align: center;
 }
 
@@ -506,7 +574,6 @@ body {
   height: 70vh;
   border: none;
   border-radius: 16px;
-  box-shadow: 0 0 20px rgba(255, 0, 170, 0.3);
   margin: 0 auto 
 }
 
