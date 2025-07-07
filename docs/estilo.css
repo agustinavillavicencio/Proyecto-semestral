@@ -359,7 +359,7 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 180px;
-  min-height: 500vh;
+  min-height: 400vh;
   text-align: center;
 }
 
@@ -497,16 +497,17 @@ body {
   max-width: 900px;
   font-size: 1.4rem;
   line-height: 1.8;
-  margin: 0 auto 60px auto;
+  margin: 0 auto 150px auto;
 }
 
 .iframe-visualizacion-blanca {
   width: 90vw;
-  max-width: 1200px;
+  max-width: 1000px;
   height: 70vh;
   border: none;
   border-radius: 16px;
   box-shadow: 0 0 20px rgba(255, 0, 170, 0.3);
+  margin: 0 auto 
 }
 
 /* Opcional: si quieres una animación manual (sin AOS) */
