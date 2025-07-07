@@ -388,7 +388,7 @@ body {
 /* Visualizaciones */
 .contenedor-visualizaciones {
   position: relative;
-  width: 90vw;
+  width: 100vw;
   height: 90vh;
   margin: 0 auto;
   border-radius: 16px;
@@ -427,7 +427,7 @@ body {
   border-radius: 30px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  margin-top: -50px;
+  margin-top: -70px;
 }
 
 .boton-cambio:hover {
