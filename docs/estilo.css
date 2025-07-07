@@ -354,33 +354,47 @@ body {
 .seccion-rosada-visualizacion {
   background-color: #ff00aa;
   color: white;
-  padding: 100px 20px;
+  padding: 120px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 120px;
-  min-height: 350vh; /* Para scroll largo */
+  gap: 100px;
+  min-height: 300vh;
+  text-align: center;
 }
 
-.contenedor-parrafos-scroll {
+/* Parrafos con efecto al hacer scroll */
+.parrafos-scroll {
   display: flex;
   flex-direction: column;
-  gap: 200px;
-  max-width: 900px;
-  width: 100%;
+  gap: 150px;
+  max-width: 800px;
 }
 
-.parrafo-scroll {
+.parrafo-fade {
   font-size: 1.4rem;
   line-height: 1.8;
   text-align: justify;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
+.parrafo-fade.aos-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Visualizaciones */
 .contenedor-visualizaciones {
   position: relative;
-  width: 100%;
-  max-width: 1000px;
-  height: 70vh;
+  width: 90vw;
+  height: 80vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
 }
 
 .iframe-base,
@@ -391,9 +405,8 @@ body {
   width: 100%;
   height: 100%;
   border: none;
-  border-radius: 12px;
   transition: opacity 0.6s ease;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
 }
 
 .iframe-superpuesta {
@@ -406,34 +419,29 @@ body {
   z-index: 1;
 }
 
-.boton-comparar {
-  margin-top: 40px;
+/* Botón */
+.boton-cambio {
   padding: 14px 28px;
   font-size: 1rem;
-  border: none;
-  border-radius: 24px;
   background-color: white;
   color: #ff00aa;
-  font-family: 'Poppins', sans-serif;
+  border: none;
+  border-radius: 30px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
-.boton-comparar:hover {
-  background-color: #ffe4f5;
+.boton-cambio:hover {
+  background-color: #ffe0f4;
 }
 
-.contenedor-latido {
-  margin-top: 250px;
-  text-align: center;
-}
-
+/* Frase latido */
 .frase-latido {
   font-size: 2.5rem;
   font-weight: bold;
   animation: latido 1.5s infinite;
   max-width: 800px;
-  margin: 0 auto;
+  margin-top: 200px;
 }
 
 @keyframes latido {
