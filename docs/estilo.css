@@ -509,31 +509,36 @@ body {
   100% { transform: scale(1); }
 }
 
-.seccion-blanca-texto-rosado {
+.seccion-blanca-visualizacion {
   background-color: white;
-  padding: 100px 40px;
-  color: #ff00aa; /* rosado fluor */
+  padding: 100px 20px 0 20px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  min-height: 100vh;
-  text-align: justify;
 }
 
-.contenedor-parrafos-columnas {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 80px; /* espacio entre las columnas */
-  max-width: 1200px;
-  width: 100%;
+.contenedor-parrafo-visualizacion {
+  max-width: 800px;
+  margin-top: 150px; /* Gran margen superior */
+  margin-bottom: 150px; /* Gran espacio antes de la visualización */
+  text-align: center;
 }
 
-.parrafo-columna {
-  flex: 1;
-  font-size: 1.4rem;
-  line-height: 1.8;
+.contenedor-parrafo-visualizacion p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  color: #ff00c8;
+  line-height: 1.6;
 }
+
+/* Estilo para iframe de visualización grande */
+.iframe-visualizacion-grande {
+  width: 90vw;
+  height: 650px; /* Puedes ajustar este valor si tu visualización es más alta */
+  border: none;
+  display: block;
+}
+
 
 .pantalla-parrafos-con-imagenes {
   background-color: white;
