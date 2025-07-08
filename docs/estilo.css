@@ -536,48 +536,52 @@ body {
 }
 
 .pantalla-parrafos-con-imagenes {
-  margin: 0;
+  background-color: white;
   padding: 0;
+  margin: 0;
 }
 
+/* Cada pantalla (párrafo) ocupa una vista completa con márgenes laterales */
 .pantalla {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 10%;
-  background-color: white;
-  color: #ff00c8;
-  text-align: center;
+  padding: 0 10vw; /* margen lateral */
+  box-sizing: border-box;
 }
 
 .pantalla p {
   font-family: 'Poppins', sans-serif;
   font-size: 1.5rem;
+  color: #ff00c8;
+  text-align: center;
   line-height: 1.6;
   max-width: 800px;
+  margin: 0;
 }
 
-/* Fila de collage */
+/* Línea de collage debajo de cada párrafo */
 .linea-collage {
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
-  background-color: white;
-  padding: 60px 20px;
-  flex-wrap: nowrap;
-  overflow-x: auto;
+  padding: 0 5vw;
+  box-sizing: border-box;
+  flex-wrap: wrap;
 }
 
+/* Imágenes dentro del collage */
 .img-collage {
-  width: 150px;
+  width: 160px;
   height: auto;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
 
-/* Estilos de rotación */
+/* Rotaciones estéticas */
 .rotar-izq {
   transform: rotate(-5deg);
 }
