@@ -609,7 +609,7 @@ body {
 
 /* Imágenes dentro del collage */
 .img-collage {
-  width: 160px;
+  width: 220px;
   height: auto;
   object-fit: cover;
   transition: transform 0.3s ease;
