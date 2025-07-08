@@ -245,7 +245,6 @@ body {
   margin: 0;
 }
 
-
 .seccion-visualizacion {
   width: 100%;
   height: 100vh;
@@ -286,7 +285,7 @@ body {
 }
 
 .iframe-visual-rosado {
-  width: 100%;
+  width: 115%;
   height: 600px;
   border: none;
 }
@@ -445,7 +444,7 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 180px;
-  min-height: 500vh;
+  min-height: 400vh;
   text-align: center;
 }
 
@@ -512,7 +511,7 @@ body {
   background-color: white;
   color: #ff00aa;
   border: none;
-  border-radius: 30px;
+  border-radius: 20px;
   cursor: pointer;
   transition: background-color 0.3s ease;
   margin-top: -150px;
@@ -580,6 +579,7 @@ body {
   max-width: 800px;
   margin-top: 150px; /* Gran margen superior */
   margin-bottom: 150px; /* Gran espacio antes de la visualización */
+  margin-left: 40px;
   text-align: center;
 }
 
