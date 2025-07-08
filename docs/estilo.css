@@ -443,7 +443,7 @@ body {
 
 /* Visualizaciones */
 .contenedor-visualizaciones {
-  position: center;
+  position: relative;
   width: 90vw;
   height: 90vh;
   max-width: 1200px;
@@ -485,7 +485,7 @@ body {
   border-radius: 30px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  margin-top: -300px;
+  margin-top: -150px;
 }
 
 .boton-cambio:hover {
