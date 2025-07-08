@@ -279,6 +279,7 @@ body {
   font-size: 7rem;
   margin-bottom: 70px;
   color: white;
+  animation: latido 1.5s infinite;
 }
 
 .botones-subperfiles {
@@ -366,7 +367,7 @@ body {
   max-width: 600px;
   font-family: 'Poppins', sans-serif;
   font-size: 1.3rem;
-  color: #111;
+  color: white;
   line-height: 1.7;
   padding: 20px;
   box-sizing: border-box;
@@ -495,7 +496,8 @@ body {
 /* Frase latido */
 .frase-latido {
   font-size: 2.5rem;
-  font-weight: bold;
+  font-weight: bold; 
+  font-family: 'Orbitron', sans-serif;
   animation: latido 1.5s infinite;
   max-width: 800px;
   margin-top: 200px;
@@ -507,6 +509,33 @@ body {
   50% { transform: scale(1); }
   75% { transform: scale(1.05); }
   100% { transform: scale(1); }
+}
+
+.seccion-dos-columnas {
+  background-color: white;
+  padding: 100px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor-columnas {
+  display: flex;
+  gap: 60px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.columna {
+  flex: 1;
+}
+
+.columna p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.3rem;
+  color: #ff00c8;
+  text-align: justify;
+  line-height: 1.6;
 }
 
 .seccion-blanca-visualizacion {
