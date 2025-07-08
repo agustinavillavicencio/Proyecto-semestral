@@ -120,4 +120,35 @@ function toggleVisualizacion() {
   }
 }
 
+// Info específica para la sección de queens (Visualización 1)
+const infoQueens = {
+  Beyonce: "Reconocida por su fuerza escénica, versatilidad y liderazgo artístico. Su carrera ha marcado un antes y un después en la industria del pop.",
+  Taylor: "Maestra de la narrativa personal, Taylor Swift ha sabido reinventarse en cada álbum, dominando tanto la industria musical como el discurso público.",
+  Rihanna: "Su impacto trasciende la música, con una estética poderosa y una presencia cultural global que redefine el estrellato.",
+  Lady: "Innovadora visual y sonora. Lady Gaga rompió esquemas con su teatralidad y sensibilidad artística.",
+  Britney: "Icono de los 2000, Britney simboliza la cultura pop global y la complejidad del éxito en la era mediática.",
+  Ariana: "Con una voz virtuosa y una estética cuidada, Ariana combina el legado del R&B con el pop contemporáneo.",
+  Adele: "Su honestidad emocional y voz poderosa la han convertido en una figura imprescindible del pop intimista.",
+  Nicki: "Desafiante y camaleónica, Nicki Minaj redefinió el papel femenino en el rap-pop con identidad y performance.",
+  Miley: "Miley Cyrus ha transitado múltiples etapas creativas, abrazando la transformación como parte esencial de su identidad artística.",
+  Shakira: "Fusión cultural y energía. Shakira es una de las artistas más internacionales y versátiles del pop.",
+  Katy: "Con su estilo visual extravagante y éxitos contagiosos, Katy Perry se ha consolidado como un ícono pop de su generación."
+};
+
+// Evento de clic para mostrar el popup de artistas queens
+document.querySelectorAll('.artista-img').forEach(img => {
+  img.addEventListener('click', () => {
+    const clave = img.dataset.artista;
+    const contenido = infoQueens[clave] || "Información no disponible.";
+    document.getElementById('contenido-popup-queen').textContent = contenido;
+    document.getElementById('popup-queen').style.display = 'block';
+  });
+});
+
+// Evento para cerrar el popup
+document.querySelector('.cerrar-queen').addEventListener('click', () => {
+  document.getElementById('popup-queen').style.display = 'none';
+});
+
+
 
