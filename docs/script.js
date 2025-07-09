@@ -126,3 +126,35 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const infoQueens = {
+    Beyonce: "Reconocida por su fuerza escénica, versatilidad y liderazgo artístico.",
+    Taylor: "Maestra de la narrativa personal, Taylor Swift ha sabido reinventarse.",
+    Rihanna: "Su impacto trasciende la música.",
+    Lady: "Innovadora visual y sonora.",
+    Britney: "Icono de los 2000.",
+    Ariana: "Con una voz virtuosa y estética cuidada.",
+    Adele: "Honestidad emocional y voz poderosa.",
+    Nicki: "Desafiante y camaleónica.",
+    Miley: "Múltiples etapas creativas.",
+    Shakira: "Fusión cultural y energía.",
+    Katy: "Estilo visual extravagante."
+  };
+
+  document.querySelectorAll('.artista-img').forEach(img => {
+    img.addEventListener('click', () => {
+      const clave = img.dataset.artista;
+      const popup = document.getElementById('popup-queen');
+      const contenido = document.getElementById('contenido-popup-queen');
+
+      contenido.textContent = infoQueens[clave] || "Información no disponible.";
+      popup.style.display = 'block';
+    });
+  });
+
+  const cerrarBtn = document.querySelector('.cerrar-queen');
+  cerrarBtn.addEventListener('click', () => {
+    document.getElementById('popup-queen').style.display = 'none';
+  });
+});
