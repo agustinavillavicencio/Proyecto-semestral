@@ -147,6 +147,30 @@ body {
   z-index: 1;
 }
 
+.encabezado-artistas {
+  position: absolute;
+  top: 40px;
+  width: 100%;
+  text-align: center;
+  z-index: 3;
+}
+
+.titulo-artistas {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  color: white;
+  margin: 0;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.subtitulo-artistas {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  color: white;
+  margin-top: 10px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+}
+
 .collage-artistas {
   position: absolute;
   bottom: 0;
@@ -245,7 +269,7 @@ body {
   margin: 0;
 }
 .seccion-verde-variables {
-  background-color: #00ff8c; /* verde fluor */
+  background-color: #C6FF1A; /* verde fluor */
   padding: 120px 10vw;
   text-align: center;
 }
