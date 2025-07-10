@@ -244,6 +244,22 @@ body {
   line-height: 1.7;
   margin: 0;
 }
+.seccion-verde-variables {
+  background-color: #00ff8c; /* verde fluor */
+  padding: 120px 10vw;
+  text-align: center;
+}
+
+.contenedor-variables p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  color: #ff00c8; /* rosado fluor */
+  line-height: 1.8;
+  margin-bottom: 60px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .seccion-visualizacion {
   width: 100%;
