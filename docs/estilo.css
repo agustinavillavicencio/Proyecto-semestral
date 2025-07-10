@@ -566,7 +566,7 @@ body {
 
 /* Frase latido */
 .frase-latido {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   font-weight: bold; 
   font-family: 'Orbitron', sans-serif;
   animation: latido 1.5s infinite;
