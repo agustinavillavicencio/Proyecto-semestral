@@ -700,7 +700,7 @@ body {
 }
 
 .footer {
-  background-color: #111;
+  background-color: #C6FF1A;
   padding: 40px 20px;
   text-align: center;
   color: #ff00c8;
@@ -710,7 +710,7 @@ body {
 }
 
 .footer a {
-  color: #ff00c8; /* o el color que estés usando */
+  color: #C9A2E6; /* o el color que estés usando */
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
